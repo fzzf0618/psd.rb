@@ -135,7 +135,7 @@ class PSD
             position: position_in_comp(comp[:id])
           }
         end
-
+        puts "aaaaaaaaaaaaaaaaa"
         hash
       end
 
