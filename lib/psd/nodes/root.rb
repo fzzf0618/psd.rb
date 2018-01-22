@@ -57,7 +57,7 @@ class PSD
               slices: @psd.slices.map(&:to_hash)
             }
           }
-        }
+        }.to_json
       end
 
       private
