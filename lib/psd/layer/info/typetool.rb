@@ -162,6 +162,18 @@ class PSD
       }
     end
 
+    def to_json
+      {
+        value:      text_value,
+        font:       font,
+        left:       left,
+        top:        top,
+        right:      right,
+        bottom:     bottom,
+        transform:  transform
+    }.to_json
+    end
+
     def method_missing(method, *args, &block)
       return @data[method] if @data.has_key?(method)
       return super
